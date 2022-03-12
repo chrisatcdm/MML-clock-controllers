@@ -4,7 +4,7 @@
 
 This code has been designed to run on a Raspberry Pi Pico microcontroller running [CircuitPython](https://circuitpython.org/). The **code.py** and the **lib** can be dropped onto a mounted Pico and the device will mount as a human interface device (HID).
 
-There are two variations to the boxes, but the same code runs on both.
+There are two variations to the boxes (two-button and four-button) but the same code runs on both.
 
 ## Button Connections
 
