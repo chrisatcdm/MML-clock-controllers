@@ -8,7 +8,7 @@ There are two variations to the boxes (two-button and four-button) but the same 
 
 ## Button Connections
 
-Normally open-circuit should be connected to GPIO0, GPIO1, GPIO2, and GPIO3 and ground. GPIO mapping can of course be changed in the code.
+Normally open-circuit buttons should be connected to GPIO0, GPIO1, GPIO2, and GPIO3 and ground. GPIO mapping can of course be changed in the code.
 
 ## Key Mapping
 
