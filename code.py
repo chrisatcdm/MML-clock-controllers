@@ -1,71 +1,80 @@
-# SPDX-FileCopyrightText: 2021 John Park for Adafruit Industries
-# SPDX-License-Identifier: MIT
-# RaspberryPi Pico RP2040 Mechanical Keyboard
-
 import time
 import board
-from digitalio import DigitalInOut, Direction, Pull
+import digitalio
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
-from adafruit_hid.consumer_control import ConsumerControl
-from adafruit_hid.consumer_control_code import ConsumerControlCode
-
-print("---Pico Pad Keyboard---")
 
 kbd = Keyboard(usb_hid.devices)
-cc = ConsumerControl(usb_hid.devices)
 
-# list of pins to use (skipping GP15 on Pico because it's funky)
-pins = [
-    board.GP0,
-    board.GP1
-]
+# keymaps
+start_key = Keycode.A
+stop_key = Keycode.A
+reset_24_key = Keycode.B
+reset_14_key = Keycode.C
 
-KEY = 2
+# pin setups
+start = digitalio.DigitalInOut(board.GP0)
+start.direction = digitalio.Direction.INPUT
+start.pull = digitalio.Pull.UP
 
-keymap = {
-    (0): (KEY, [Keycode.Q]),
-    (1): (KEY, [Keycode.Q])
-}
+stop = digitalio.DigitalInOut(board.GP1)
+stop.direction = digitalio.Direction.INPUT
+stop.pull = digitalio.Pull.UP
 
-switches = [0, 1]
+reset_24 = digitalio.DigitalInOut(board.GP2)
+reset_24.direction = digitalio.Direction.INPUT
+reset_24.pull = digitalio.Pull.UP
+reset_24_switch_state = 0
 
-for i in range(2):
-    switches[i] = DigitalInOut(pins[i])
-    switches[i].direction = Direction.INPUT
-    switches[i].pull = Pull.UP
+reset_14 = digitalio.DigitalInOut(board.GP3)
+reset_14.direction = digitalio.Direction.INPUT
+reset_14.pull = digitalio.Pull.UP
+reset_14_switch_state = 0
 
-switch_state = [0, 0]
+# initial status for start/stop keys
+start_status = 0
+stop_status = 0
 
+# the loop
 while True:
-    for button in range(2):
-        if switch_state[button] == 0:
-            if not switches[button].value:
-                try:
-                    if keymap[button][0] == KEY:
-                        kbd.press(*keymap[button][1])
-                        kbd.release(*keymap[button][1])
-                        print(switches[button].value)
-                    else:
-                        cc.send(keymap[button][1])
-                except ValueError:  # deals w six key limit
-                    pass
-                switch_state[button] = 1
+    if start_status == 0:
+        if not start.value:
+            kbd.send(start_key)
+            #print("timer started")
+            start_status = 1
+            stop_status = 0
 
-        if switch_state[button] == 1:
-            if switches[button].value:
-                try:
-                    if keymap[button][0] == KEY:
-                        kbd.release(*keymap[button][1])
+    if stop_status == 0:
+        if not stop.value:
+            kbd.send(stop_key)
+            #print("timer stopped")
+            stop_status = 1
+            start_status = 0
 
-                except ValueError:
-                    pass
-                switch_state[button] = 0
+    # reset_24
+    if reset_24_switch_state == 0:
+        if not reset_24.value:
+            kbd.press(reset_24_key)
+            kbd.release(reset_24_key)
+            reset_24_switch_state = 1
 
-    time.sleep(0.01)  # debounce
-# Write your code here :-)
+    if reset_24_switch_state == 1:
+        if reset_24.value:
+            kbd.release(reset_24_key)
+            reset_24_switch_state = 0
 
+    # reset_14
+    if reset_14_switch_state == 0:
+        if not reset_14.value:
+            kbd.press(reset_14_key)
+            kbd.release(reset_14_key)
+            reset_14_switch_state = 1
 
+    if reset_14_switch_state == 1:
+        if reset_14.value:
+            kbd.release(reset_14_key)
+            reset_14_switch_state = 0
 
-
+    # debounce
+    time.sleep(0.01)
