@@ -16,27 +16,27 @@ The coloured housing is made up of two parts that clip together using plastic ta
 
 To disassemble the coloured housing (to gain access to the micro-switch) simply depress the plastic tags and the button will release from out the front of the housing.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4d05922d-eb1a-4075-b24b-b37e4702d692/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4d05922d-eb1a-4075-b24b-b37e4702d692%2FUntitled.png?table=block&id=fcd75b41-7728-4b9f-abb2-e2876046f4a4&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=960&userId=&cache=v2)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/955be2cd-905d-4b96-847b-61872068406d/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F955be2cd-905d-4b96-847b-61872068406d%2FUntitled.png?table=block&id=0b1a7780-7953-4c84-a32d-506c520f2a16&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=2000&userId=&cache=v2)
 
 ## **The micro-switch**
 
 is a sealed unit and is retained in the back of the coloured housing with opposing plastic tags.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e4d88e1a-d5b5-44d7-ae70-11f66f97911f/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe4d88e1a-d5b5-44d7-ae70-11f66f97911f%2FUntitled.png?table=block&id=cb0cb9e2-6b24-4588-938d-9d45d3c7bf48&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=2000&userId=&cache=v2)
 
 **To remove the micro-switch** you must first remove the button and depress the plastic tags, and push the micro-switch towards the front of the button.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc601fe1-af69-49c2-85da-57520bb1d1ba/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffc601fe1-af69-49c2-85da-57520bb1d1ba%2FUntitled.png?table=block&id=1e4df75f-d049-49c7-971a-995e4d2eaff2&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=670&userId=&cache=v2)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69b4654a-8419-4db5-bd73-8acf5a1b15ae/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F69b4654a-8419-4db5-bd73-8acf5a1b15ae%2FUntitled.png?table=block&id=d8534019-2a8a-415b-8682-cc24a0d56459&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=2000&userId=&cache=v2)
 
 ## “The Tail”
 
 The tail is two wires (black and red) soldered to the micro-switch and are terminated with a JST 2.0 PH 2 Femail Pin Connector for connection to the Raspberry Pi Pico. Each control box has a spare micro-switch, with a pre-soldered tail taped inside the box.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd9ce176-2a26-4837-a8a8-506801e045cd/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcd9ce176-2a26-4837-a8a8-506801e045cd%2FUntitled.png?table=block&id=b552d624-54dd-487e-9935-00686b143daf&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=580&userId=&cache=v2)
 
 # Button Connections
 
@@ -46,9 +46,9 @@ The buttons are numbered 1-4 (or 1-2 in the case of the two-button boxes) and sh
 
 The top-left button is “1” the top right button is “2”, the bottom left is “3” and the bottom right is “4”.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63e185f1-774a-4163-ad5f-4210a5d66d9a/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F63e185f1-774a-4163-ad5f-4210a5d66d9a%2FUntitled.png?table=block&id=9af40635-a363-4352-ae33-27316205b386&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=2000&userId=&cache=v2)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa404d6a-21cb-4385-bb69-49ed547bdfff/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffa404d6a-21cb-4385-bb69-49ed547bdfff%2FUntitled.png?table=block&id=f6060423-96fe-4564-b207-6f3d30b2c729&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=2000&userId=&cache=v2)
 
 # Key Mapping
 
@@ -60,8 +60,8 @@ The 24 & 14-second reset buttons are mapped to keys "B" and "C" respectively and
 
 The control boxes connect to a PC via a Straight, XLR Panel Mount, Socket Type A to A 2.0 USB Connector located at the rear. Retained in a 24mm hole by two counter-sunk SS hex head screws (M3x12mm) and SS full nuts (Loctite applied).
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d8d21e8d-e991-49a7-9a36-1d1796697769/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd8d21e8d-e991-49a7-9a36-1d1796697769%2FUntitled.png?table=block&id=602dd298-9846-420c-a493-9dca2693a5c6&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=1880&userId=&cache=v2)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5696ce0-1d9b-4c3a-98dc-319ff3a3ebbe/Untitled.png)
+![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff5696ce0-1d9b-4c3a-98dc-319ff3a3ebbe%2FUntitled.png?table=block&id=c1718551-9ba0-4140-95d8-d7e787759833&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=670&userId=&cache=v2)
 
 Internally a short micro-USB cable connected the external USB socket to the Raspberry Pi Pico.
