@@ -14,4 +14,4 @@ Normally open-circuit buttons should be connected to GPIO0, GPIO1, GPIO2, and GP
 
 The two buttons for starting and stopping the clock are mapped to the same key (”A”). They cannot be pressed more than once at a time and must be reset by the opposing button. In other words, you cannot stop the clock twice, you must start it before you can stop it again.
 
-The 24 & 14-second reset buttons can be pressed as many times as required. They do not latch. In other words, if you hold the button down, it will only fire once.
+The 24 & 14-second reset buttons are mapped to keys "B" and "C" respectively and can be pressed as many times as required. They do not latch. In other words, if you hold the button down, it will only fire once.
