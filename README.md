@@ -64,4 +64,4 @@ The control boxes connect to a PC via a Straight, XLR Panel Mount, Socket Type A
 
 ![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff5696ce0-1d9b-4c3a-98dc-319ff3a3ebbe%2FUntitled.png?table=block&id=c1718551-9ba0-4140-95d8-d7e787759833&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=670&userId=&cache=v2)
 
-Internally a short micro-USB cable connected the external USB socket to the Raspberry Pi Pico.
+Internally a short micro-USB cable connects the external USB socket to the Raspberry Pi Pico.

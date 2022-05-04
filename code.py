@@ -12,6 +12,7 @@ start_key = Keycode.A
 stop_key = Keycode.A
 reset_24_key = Keycode.B
 reset_14_key = Keycode.C
+horn_key = Keycode.D
 
 # pin setups
 start = digitalio.DigitalInOut(board.GP0)
@@ -31,6 +32,12 @@ reset_14 = digitalio.DigitalInOut(board.GP3)
 reset_14.direction = digitalio.Direction.INPUT
 reset_14.pull = digitalio.Pull.UP
 reset_14_switch_state = 0
+
+horn = digitalio.DigitalInOut(board.GP4)
+horn.direction = digitalio.Direction.INPUT
+horn.pull = digitalio.Pull.UP
+horn_state = 0
+
 
 # initial status for start/stop keys
 start_status = 0
@@ -75,6 +82,18 @@ while True:
         if reset_14.value:
             kbd.release(reset_14_key)
             reset_14_switch_state = 0
+
+    # horn
+    if horn_state == 0:
+        if not horn.value:
+            kbd.press(horn_key)
+            kbd.release(horn_key)
+            horn_state = 1
+
+    if horn_state == 1:
+        if horn.value:
+            kbd.release(horn_key)
+            horn_state = 0
 
     # debounce
     time.sleep(0.01)
