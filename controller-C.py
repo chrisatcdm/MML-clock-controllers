@@ -6,9 +6,9 @@
 # 
 # Button mapping:
 # TL: a
-# TR: 
+# TR: a
 # BL: b
-# BR: 
+# BR: c
 
 
 
