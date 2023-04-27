@@ -65,3 +65,15 @@ The control boxes connect to a PC via a Straight, XLR Panel Mount, Socket Type A
 ![Untitled](https://tulip-actress-fdd.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff5696ce0-1d9b-4c3a-98dc-319ff3a3ebbe%2FUntitled.png?table=block&id=c1718551-9ba0-4140-95d8-d7e787759833&spaceId=556b476a-35e6-4053-976b-1f2853a5ec64&width=670&userId=&cache=v2)
 
 Internally a short micro-USB cable connects the external USB socket to the Raspberry Pi Pico.
+
+# Service notes
+
+27/04/2023
+
+Controller A: As found, working fine, faceplate loose. As left, added loctite to both USB connecter ends and screwed face plate on. Code notes updated and added to git repository.
+
+Controller B: As found, no signs of life - MCU didn't register when plugged in. USB had come unplugged from MCU. All plug connectors had been replaced by 3rd-party with chocolate block style connecters. As left, reconnected USB plug and added loctite to both ends, removed all chocolate block style connectors and hard soldered/heatshrinked joins. Screwed face plate on. Tested OK. Code notes updated and added to git repository.
+
+Controller C: As found, TR and BR buttons not working. All plug connectors had been replaced by 3rd-party with chocolate block style connecters. Two solder joins had broken at MCU. Face plate loose. As left, re-soldered MCU joins, removed all chocolate block style connectors and hard soldered/heatshrinked joins. Added loctite to both ends of USB plug and screwed face plate on. Tested OK. Code notes updated and added to git repository.
+
+Controller D: As found, no signs of life - MCU didn't register when plugged in, face plate not secured to main body. Rear USB connector was unplugged. One plug had a broken solder join at the button end, another had a plug that had come apart. As left, hard soldered both buttons to MCU, added loctite to both ends of USB plug and screwed face plate on. Tested OK. Code notes updated and added to git repository.
