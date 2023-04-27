@@ -70,6 +70,8 @@ Internally a short micro-USB cable connects the external USB socket to the Raspb
 
 27/04/2023
 
+Controller A: As found, working fine; the faceplate is loose. As left, I added Loctite to both USB connecter ends and screwed the faceplate on. Code notes were updated and added to the git repository.
+
 Controller B: As found, no signs of life - MCU didn't register when plugged in. USB had come unplugged from MCU. All plug connectors had been replaced by a 3rd-party with chocolate block-style connectors. As left, reconnected the USB plug, added Loctite to both ends and removed all chocolate block style connectors and hard soldered/heat-shrunk joins. Screwed the faceplate on. Tested OK. Code notes were updated and added to the git repository.
 
 Controller C: As found, TR and BR buttons are not working. All plug connectors had been replaced by a 3rd-party with chocolate block-style connectors. Two solder joins had broken at MCU. The faceplate is loose. As left, re-soldered MCU joins, removed all chocolate block style connectors, and hard soldered/heat-shrunk joins. Added Loctite to both ends of the USB plug and screwed the faceplate on. Tested OK. Code notes were updated and added to the git repository.
