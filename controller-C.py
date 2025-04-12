@@ -5,10 +5,10 @@
 # does not repeat the keypress, or prevent another button from being pressed.
 # 
 # Button mapping:
-# TL: a
-# TR: a
-# BL: b
-# BR: c
+# TL: E
+# TR: F
+# BL: G
+# BR: H
 
 
 
@@ -22,10 +22,10 @@ from adafruit_hid.keycode import Keycode
 kbd = Keyboard(usb_hid.devices)
 
 # keymaps
-start_key = Keycode.A
-stop_key = Keycode.A
-reset_24_key = Keycode.B
-reset_14_key = Keycode.C
+start_key = Keycode.E
+stop_key = Keycode.F
+reset_24_key = Keycode.G
+reset_14_key = Keycode.H
 
 # pin setups
 start = digitalio.DigitalInOut(board.GP0)
