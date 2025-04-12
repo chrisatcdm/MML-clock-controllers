@@ -1,14 +1,14 @@
 ##################################################
-# Controller C
+# Controller B
 # 4 arcade style buttons
 # each button sends a single keypress, and holding down a button 
 # does not repeat the keypress, or prevent another button from being pressed.
 # 
 # Button mapping:
-# TL: e
-# TR: f
-# BL: g
-# BR: h
+# TL: X
+# TR: Y
+# BL: V
+# BR: Z
 
 import time
 import board
@@ -41,10 +41,10 @@ MEDIA = 1
 KEY = 2
 
 keymap = {
-    (0): (KEY, [Keycode.E]),
-    (1): (KEY, [Keycode.F]),
-    (2): (KEY, [Keycode.G]),
-    (3): (KEY, [Keycode.H]),
+    (0): (KEY, [Keycode.X]),
+    (1): (KEY, [Keycode.Y]),
+    (2): (KEY, [Keycode.V]),
+    (3): (KEY, [Keycode.Z]),
     (4): (KEY, [Keycode.D]),
 
 }
